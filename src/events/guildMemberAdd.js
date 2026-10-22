@@ -13,7 +13,7 @@ const event = {
     /*
       TODO: Change getWelcomeMessage to getWelcomeMessageWithMeme to send a meme to welcome your user.
     */
-    const welcomeMessage = await getWelcomeMessage(member.id);
+    const welcomeMessage = await getWelcomeMessageWithMeme(member.id);
     channel.send(welcomeMessage);
   },
 };
@@ -40,9 +40,17 @@ const getWelcomeMessageWithMeme = async (userId) => {
   */
   const meme = await getMeme();
 
+  const welcomeMessages = [
+    "Howdy new member here\'s a meme for you to enjoy!",
+    "Here\'s a meme to brighten your day!",
+    "Were happy to see you join the server!",
+    "We have a card game bot! try /game to play!"
+  ];
+  const randomWelcomceMessage = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+
   return {
     content: `Welcome ${userMention(userId)},
-    Here's a meme for you to enjoy!`,
+    ${randomWelcomceMessage}`,
     embeds: [meme],
   };
 };
