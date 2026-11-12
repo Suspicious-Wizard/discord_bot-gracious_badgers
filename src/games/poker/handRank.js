@@ -1,4 +1,4 @@
-import { Card } from './Card.js';
+import { Card } from '../cards/Card.js';
 
 // poker hand tiers, in order of strength
 const Tier = {
