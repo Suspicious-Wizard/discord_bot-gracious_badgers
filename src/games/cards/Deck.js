@@ -41,7 +41,15 @@ export class Deck {
     }
 
     // pop off back of array; returns undefined for an empty deck
-    draw() { return this.#cards.pop(); }
+    draw(cards = 1) { 
+        let hand = [];
+        for (let i = 0; i < cards; ++i) {
+            const card = this.#cards.pop();
+            if (!card) break;
+            hand.push(card);
+        }
+        return hand;
+    }
     get capacity() { return this.#capacity; }
     get size() { return this.#cards.length; }
 

@@ -1,4 +1,11 @@
 {
   "users": [
-  ]
+    {
+      "user_id": "429692050053660674",
+      "dailyCheckin": true,
+      "coins": 0
+    }
+  ],
+  "last_reset": "2026-11-12T06:14:35.910Z",
+  "last_online": "2026-11-12T06:25:22.052Z"
 }

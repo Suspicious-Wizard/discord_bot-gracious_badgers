@@ -34,6 +34,12 @@ export function parseRank(input) {
   return RANK_LOOKUP.get(normalize(input)) ?? null;
 }
 
+export function parseSuit(input) {
+  if (Object.values(Suit).includes(input)) return input; // Deck passes Suit objects directly
+  if (typeof input !== 'string') return null;
+  return SUIT_LOOKUP.get(normalize(input)) ?? null;
+}
+
 const describe = (x) => x?.name ?? String(x);
 
 export class Card {
@@ -65,6 +71,10 @@ export class Card {
       if (parseRank(r) !== null && parseSuit(su) !== null) return new Card(r, su);
     }
     throw new Error(`can't parse "${text}" as a card`);
+  }
+
+  static sortByRank(cards) {
+    return [...cards].sort((a, b) => a.rank - b.rank);
   }
 
   get rank() { return this.#rank; }

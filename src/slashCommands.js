@@ -8,7 +8,11 @@ const commands = [
      new SlashCommandBuilder()
     .setName("blackjack")
     .setDescription("Play a game of blackjack against the bot")
-    .toJSON()
+    .toJSON(),
+    new SlashCommandBuilder()
+    .setName("poker")
+    .setDescription("Play a game of poker against the bot")
+    .toJSON(),
 ];
 const rest = new REST({version:"10"}).setToken(process.env.TOKEN);
 (async () =>{
