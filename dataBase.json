@@ -2,10 +2,25 @@
   "users": [
     {
       "user_id": "429692050053660674",
+      "dailyCheckin": false,
+      "coins": 10
+    },
+    {
+      "user_id": "948745929471705118",
+      "dailyCheckin": false,
+      "coins": 10
+    },
+    {
+      "user_id": "1041083326338957343",
+      "dailyCheckin": true,
+      "coins": 0
+    },
+    {
+      "user_id": "205888003594256384",
       "dailyCheckin": true,
       "coins": 0
     }
   ],
-  "last_reset": "2026-11-12T06:14:35.910Z",
-  "last_online": "2026-11-12T06:25:22.052Z"
+  "last_reset": "2026-11-13T08:00:00.000Z",
+  "last_online": "2026-11-14T06:33:29.355Z"
 }
