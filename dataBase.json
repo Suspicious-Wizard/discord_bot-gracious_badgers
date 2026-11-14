@@ -1,22 +1,22 @@
 {
   "users": [
     {
-      "user_id": "429692050053660674",
+      "user_id": "400692050053660674",
       "dailyCheckin": false,
       "coins": 10
     },
     {
-      "user_id": "948745929471705118",
+      "user_id": "900745929471705118",
       "dailyCheckin": false,
       "coins": 10
     },
     {
-      "user_id": "1041083326338957343",
+      "user_id": "1001083326338957343",
       "dailyCheckin": true,
       "coins": 0
     },
     {
-      "user_id": "205888003594256384",
+      "user_id": "200888003594256384",
       "dailyCheckin": true,
       "coins": 0
     }
